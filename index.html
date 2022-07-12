@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Technologies Project</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+	<header>
+		<div class="header">
+			<div class="profile" id="profile">
+				<img src="1.jpg">
+			</div>
+			<h2>Project-1</h2>
+			<div class="navlinks">
+			<div class="header-icons">
+				<i class='bx bx-search' id="search-icon"></i>
+				<i class='bx bxs-grid'></i>
+				<i class="bx bx-moon" onclick="DarkLight();"></i>
+			</div>
+				<input type="checkbox" id="checkbox-toggle">
+				<div class="hamburger"><label for="checkbox-toggle">&#9776</label></div>
+			</div>
+		</div>
+	</header>
+	<div class="profile-info" id="profile-card">
+		<div class="wrapper">
+			<div class="prof">
+				<img src="1.jpg">
+			</div>
+			<h3>Seera Bhargavi</h3>
+			<p>E2 Cse Student</p>
+		</div>
+	</div>
+	<div class="search-bar">
+		<input type="text" name="" placeholder="Search here..">
+		<i class='bx bx-search'></i>
+	</div>
+<!-- Navigation section -->
+		<div class="navigation-bar">
+			<nav>
+			<ul class="mainmenu">
+				<li class="active"><i class="bx bx-home"></i><a href="#">Home</a></li>
+				<li class="exam"><i class="bx bxs-book-content"></i><a href="#">Exam</a></li>
+				<li id="branch"><i class="bx bx-wrench"></i><a href="#">Branch</a>
+					<div class="submenu1">
+						<ul>
+							<li class="cse"><a href="#">CSE</a><i class="bx bx-chevron-right"></i>
+								<div class="submenu2">
+									<ul>
+										<li class="cse"><a href="#members">Faculty</a>
+							</li>
+									<li class="cse"><a href="#">Student</a>
+							</li>
+						</ul>
+					</div>
+							<li><a href="#">ECE</a><i class="bx bx-chevron-right"></i></li>
+							<li><a href="#">MECH</a><i class="bx bx-chevron-right"></i></li>
+						</ul>
+					</div>
+				</li>
+				<li><i class="bx bx-phone"></i><a href="#contactpage">Contact</a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="homepage" id="blur">
+			<div class="filterPage">
+				<div class="quotesec">
+					<!-- <img src="images/6.jpg"> -->
+					<div class="quotation">
+						<i class='bx bxs-quote-alt-left'></i>
+						<h3 id="quote">Slef-belif and hard work will always earn you success</h3>
+						<i class='bx bxs-quote-alt-right'></i>
+					</div>
+					<div class="author">
+						<span>Virat Kohli</span>
+					</div>
+				</div>
+				<!-- <div class="filter">
+					<div class="col1">
+						<input type="text" name="" id="textfield">
+						<i class='bx bx-right-arrow-alt' id='arw'></i>
+					</div>
+				</div> -->
+			</div>
+				<div class="slider">
+				<div class="sliderContainer">
+					<div class="slideshow">
+						<img src="2.jpg">
+					</div>
+					<div class="slideshow">
+						<img src="3.jpg">
+					</div>
+					<div class="slideshow">
+						<img src="4.jpg">
+					</div>
+					<a class="left" onclick="nextSlide(-1)">&#10094;</a>
+					<a class="right" onclick="nextSlide(1)">&#10095;</a>
+				</div>
+					<div style="text-align:center;">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+					</div>
+				</div>
+				<div class="notification">
+				<div class="notif">
+					<marquee width="40%" direction="right"><h3 class="notif-head">Notifcations</h3></marquee>
+					<ul>
+						<li><i class='bx bxs-right-arrow-alt'></i><span>(06.02.2022)</span><a href="#">numbers and booleans can also act like objects at times.</a></li>
+						<li><i class='bx bxs-right-arrow-alt'></i><span>(06.02.2022)</span><a href="#">numbers and booleans can also act like objects at times.</a></li>
+						<li><i class='bx bxs-right-arrow-alt'></i><span>(06.02.2022)</span><a href="#">numbers and booleans can also act like objects at times.</a></li>
+						<li><i class='bx bxs-right-arrow-alt'></i><span>(06.02.2022)</span><a href="#">numbers and booleans can also act like objects at times.</a></li>
+						<li><i class='bx bxs-right-arrow-alt'></i><span>(06.02.2022)</span><a href="#">numbers and booleans can also act like objects at times.</a></li>
+						<li><i class='bx bxs-right-arrow-alt'></i><span>(06.02.2022)</span><a href="#">numbers and booleans can also act like objects at times.</a></li>
+						<li><i class='bx bxs-right-arrow-alt'></i><span>(06.02.2022)</span><a href="#">numbers and booleans can also act like objects at times.</a></li>
+						<li><i class='bx bxs-right-arrow-alt'></i><span>(06.02.2022)</span><a href="#">numbers and booleans can also act like objects at times.</a></li>
+						<li><i class='bx bxs-right-arrow-alt'></i><span>(06.02.2022)</span><a href="#">numbers and booleans can also act like objects at times.</a></li>
+						<li><i class='bx bxs-right-arrow-alt'></i><span>(06.02.2022)</span><a href="#">numbers and booleans can also act like objects at times.</a></li>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Faculty section -->
+	<div class="faculty-sec" id="members">
+		<div class="title">
+			<h1>Team Members</h1>
+		</div>
+		<div class="swiper-container">
+		<div class="swiper card_slider">
+		  <div class="swiper-wrapper">
+		    <div class="swiper-slide">
+		    	<div class="card">
+					<div class="image-content">
+						<span class="overlay"></span>
+						<div class="profile">
+							<img src="5.png">
+						</div>
+					</div>
+					<div class="content">
+						<h2>Bhargavi</h2>
+						<p>numbers and booleans can also act like objects at times.numbers and booleans can also act like objects at times.</p>
+						<button class="morebtn">View More</button>
+					</div>
+				</div>
+		    </div>
+		    <div class="swiper-slide">
+		    	<div class="card">
+					<div class="image-content">
+						<span class="overlay"></span>
+						<div class="profile">
+							<img src="5.png">
+						</div>
+					</div>
+					<div class="content">
+						<h2>Bhargavi</h2>
+						<p>numbers and booleans can also act like objects at times.numbers and booleans can also act like objects at times.</p>
+						<button class="morebtn">View More</button>
+					</div>
+				</div>
+			</div>
+		    <div class="swiper-slide">
+		    	<div class="card">
+					<div class="image-content">
+						<span class="overlay"></span>
+						<div class="profile">
+							<img src="5.png">
+						</div>
+					</div>
+					<div class="content">
+						<h2>Bhargavi</h2>
+						<p>numbers and booleans can also act like objects at times.numbers and booleans can also act like objects at times.</p>
+						<button class="morebtn">View More</button>
+					</div>
+				</div>
+		    </div>
+		    <div class="swiper-slide">
+		    	<div class="card">
+					<div class="image-content">
+						<span class="overlay"></span>
+						<div class="profile">
+							<img src="5.png">
+						</div>
+					</div>
+					<div class="content">
+						<h2>Bhargavi</h2>
+						<p>numbers and booleans can also act like objects at times.numbers and booleans can also act like objects at times.</p>
+						<button class="morebtn">View More</button>
+					</div>
+				</div>
+		    </div>
+		    <div class="swiper-slide">
+		    	<div class="card">
+					<div class="image-content">
+						<span class="overlay"></span>
+						<div class="profile">
+							<img src="5.png">
+						</div>
+					</div>
+					<div class="content">
+						<h2>Bhargavi</h2>
+						<p>numbers and booleans can also act like objects at times.numbers and booleans can also act like objects at times.</p>
+						<button class="morebtn">View More</button>
+					</div>
+				</div>
+		    </div>
+		  </div>
+		  <div class="swiper-button-prev"></div>
+		  <div class="swiper-button-next"></div>
+
+		</div>
+	</div>
+	<!-- contact form -->
+	<div class="contact-sec">
+		<div class="title">
+			<h1>Contact Us</h1>
+		</div>
+	<div class="contactinfo-container" id="contactpage">
+		<div class="box">
+			<div class="contact form">
+				<form>
+				<div class="wrapper">
+					<h2>Send a Message</h2>
+					<div class="r1">
+						<div class="inputbox">
+							<span>First Name</span>
+							<input type="text" placeholder="Bhargavi">
+						</div>
+						<div class="inputbox">
+							<span>Last Name</span>
+							<input type="text" placeholder="Seera">
+						</div>
+					</div>
+					<div class="r1">
+						<div class="inputbox">
+							<span>Email</span>
+							<input type="email" placeholder="Bhargavi@gmail.com">
+						</div>
+						<div class="inputbox">
+							<span>Mobile</span>
+							<input type="text" placeholder="+91 7569109914">
+						</div>
+					</div>
+					<div class="r2">
+						<div class="inputbox">
+							<span>Message</span>
+							<textarea placeholder="Write your message here.."></textarea>
+						</div>
+						<div class="inputbox">
+							<input type="submit" value="Send">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	<div class="contact map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30558.617593045914!2d80.82703809417538!3d16.785270647620194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3675cbf6a62db3%3A0x342925c018a01e74!2sNuzividu%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1657246480648!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="footer">
+		<p>Created By @copyright| <i class="bx bx-copyright"></i>2020 All rights reserved</p>
+		<div class="visitorcount">
+			<a href="https://www.hitwebcounter.com" target="_blank">
+			<img src="https://hitwebcounter.com/counter/counter.php?page=8013056&style=0011&nbdigits=5&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>  
+		</div>
+	</div>
+	<div class="form-container" id="formbox">
+		<div class="container">
+		<div class="title">
+			<h2><u>Registration Form</u></h2>
+		</div>
+		<form methd="post" action="">
+			<div class="inputbx">
+				<span>FirstName</span>
+				<input type="text" name="">
+			</div>
+			<div class="inputbx">
+				<span>LastName</span>
+				<input type="text" name="">
+			</div>
+			<div class="inputbx">
+				<span>Username</span>
+				<input type="text" name="">
+			</div>
+			<div class="inputbx">
+				<span>Email</span>
+				<input type="email" name="">
+			</div>
+			<div class="inputbx">
+				<span>MobileNo</span>
+				<input type="number" name="">
+			</div>
+			<div class="inputbx">
+				<button id='regbtn'>Register</button>
+			</div>
+		</form>
+	</div>
+	</div>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
